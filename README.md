@@ -28,6 +28,20 @@ Recognition of 20 isolated American Sign Language signs from the [ASL Citizen](h
 
 Test top-3 / top-5 accuracy of the ensemble: 0.937 / 0.971 (40 errors out of 238 clips). The test split is evaluated once, guarded by a lock file in the notebook.
 
+## Figures
+
+Learning curves (mean and std over 3 seeds):
+
+<img src="figures/learning_curve.png" width="420" alt="Learning curves">
+
+Per-class F1 on validation (ensemble):
+
+<img src="figures/f1_per_class.png" width="720" alt="Per-class F1">
+
+Confusion matrix on the test split (3-seed ensemble, 11 unseen signers):
+
+<img src="figures/confusion_test.png" width="520" alt="Test confusion matrix">
+
 ## How to run
 
 1. Open `notebooks/asl_stgcn_final.ipynb` on Kaggle (GPU) and attach a dataset containing `data.npz`, `signs.json` and `data.meta.csv` with the layout above, or run locally with a GPU.
