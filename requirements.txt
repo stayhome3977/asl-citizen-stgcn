@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+ipython
+torch  # 2.11.0 was used on Kaggle (GPU)
+mmengine==0.10.7
+mmcv-lite==2.1.0
+# mmaction2 must be installed with --no-deps (as in the notebook): pip install --no-deps mmaction2==1.2.0
